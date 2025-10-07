@@ -9,7 +9,7 @@ RUN npm install
 
 # Copy the rest of the source code
 COPY . .
-RUN npm run build
+RUN npx vite build
 
 # Stage 2: Serve with Nginx
 FROM nginx:alpine
